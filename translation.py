@@ -1,8 +1,8 @@
 # Jishu Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+# Telegram Channel @Team_Miss_India
+# Backup Channel @Team_Miss_India
+# Developer @Mr_Pbail
 
 
 
@@ -11,18 +11,16 @@ import os
 from config import Config
 
 class Translation(object):
-  START_TXT = """Hey {}
+  START_TXT = """Hᴀɪ {}
 
-➻ I Am A Advanced Auto Forward Bot
+​🇮​ ​🇦​​🇲​ ​🇦​ ​🇦​​🇩​​🇻​​🇦​​🇳​​🇨​​🇪​​🇩​ ​🇦​​🇺​​🇹​​🇴​ ​🇫​​🇴​​🇷​​🇼​​🇦​​🇷​​🇩​ ​🇧​​🇴​​🇹​ 🤖
+​🇮​ ​🇨​​🇦​​🇳​ ​🇫​​🇴​​🇷​​🇼​​🇦​​🇷​​🇩​ ​🇦​​🇱​​🇱​ ​🇲​​🇪​​🇸​​🇸​​🇦​​🇬​​🇪​ ​🇫​​🇷​​🇴​​🇲​ ​🇴​​🇳​​🇪​ ​🇨​​🇭​​🇦​​🇳​​🇳​​🇪​​🇱​ ​🇹​​🇴​ ​🇦​​🇳​​🇴​​🇹​​🇭​​🇪​​🇷​ ​🇨​​🇭​​🇦​​🇳​​🇳​​🇪​​🇱​ 
+​🇨​​🇱​​🇮​​🇨​​🇰​ ​🇭​​🇪​​🇱​​🇵​ ​🇧​​🇺​​🇹​​🇹​​🇴​​🇳​ ​🇹​​🇴​ ​🇰​​🇳​​🇴​​🇼​ ​🇲​​🇴​​🇷​​🇪​ ​🇦​​🇧​​🇴​​🇺​​🇹​ ​🇲​​🇪​ 
   
-➻ I Can Forward All Message From One Channel To Another Channel 
-  
-➻ Click Help Button To Know More About Me
-  
-<b>Bot Is Made By @Madflix_Bots</b>"""
+<b>𝗕𝗼𝘁 𝗜𝘀 𝗠𝗮𝗱𝗲 𝗕𝘆 @InfoSecInsiders</b>"""
 
 
-  HELP_TXT = """<b><u>🛠️ Help</b></u>
+  HELP_TXT = """<b><u>Hᴏᴡ Cᴀɴ I Hᴇʟᴘ Yᴏᴜ?</b></u>
 
 <b><u>📚 Available Commands :</u></b>
 ⏣ __/start - Check I'm Alive__ 
@@ -54,10 +52,10 @@ class Translation(object):
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
+<b>📢 Channel :</b> <a href='https://t.me/InfoSecInsiders'>𝙄𝙉𝙁𝙊 𝙎𝙀𝘾 𝙄𝙉𝙎𝙄𝘿𝙀𝙍𝙎</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/Mr_Pbail'>Pbail</a>
 
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+<b>♻️ Bot Made By :</b> @InfoSecInsiders"""
   
   STATUS_TXT = """<b><u>Bot Status</u></b>
   
@@ -149,6 +147,6 @@ Before Forwarding The Messages Click The Yes Button Only After Checking The Foll
 
 # Jishu Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+# Telegram Channel @Team_Miss_India
+# Backup Channel @Team_Miss_India
+# Developer @Mr_Pbail
