@@ -10,6 +10,7 @@ from os import environ
 from config import Config
 import motor.motor_asyncio
 from pymongo import MongoClient
+from config import Config
 
 async def mongodb_version():
     x = MongoClient(Config.DB_URL)
@@ -17,14 +18,20 @@ async def mongodb_version():
     return mongodb_version
 
 class Database:
-    
     def __init__(self, uri, database_name):
-        self._client = motor.motor_asyncio.AsyncIOMotorClient(uri)
-        self.db = self._client[database_name]
-        self.bot = self.db.bots
-        self.col = self.db.users
-        self.nfy = self.db.notify
-        self.chl = self.db.channels 
+        if not uri:
+            raise ValueError("MongoDB URI cannot be empty")
+        try:
+            # Strip any whitespace from the URI
+            uri = uri.strip()
+            self._client = motor.motor_asyncio.AsyncIOMotorClient(uri)
+            self.db = self._client[database_name]
+            self.bot = self.db.bots
+            self.col = self.db.users
+            self.nfy = self.db.notify
+            self.chl = self.db.channels
+        except Exception as e:
+            raise Exception(f"Failed to initialize MongoDB connection: {str(e)}") 
         
     def new_user(self, id, name):
         return dict(
