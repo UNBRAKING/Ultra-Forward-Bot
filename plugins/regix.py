@@ -166,17 +166,17 @@ async def forward(bot, msg, m, sts, protect):
      await forward(bot, msg, m, sts, protect)
 
 PROGRESS = """
-📈 𝗣𝗲𝗿𝗰𝗲𝘁𝗮𝗴𝗲 : {0} %
+📈 Percetage : {0} %
 
-♻️ 𝗙𝗲𝘁𝗰𝗵𝗲𝗱 : {1}
+♻️ Fetched : {1}
 
-🔥 𝗙𝗼𝗿𝘄𝗮𝗿𝗱𝗲𝗱 : {2}
+🔥 Forwarded : {2}
 
-🫠 𝗥𝗲𝗺𝗮𝗶𝗻𝗶𝗻𝗴 : {3}
+🫠 Remaining : {3}
 
-📊 𝗦𝘁𝗮𝘁𝘂𝘀 : {4}
+📊 Status : {4}
 
-⏳️ 𝗘𝗧𝗔 : {5}
+⏳️ ETC : {5}
 """
 
 async def msg_edit(msg, text, button=None, wait=None):
@@ -210,8 +210,8 @@ async def edit(msg, title, status, sts):
    text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time, progress)
    if status in ["cancelled", "completed"]:
       button.append(
-         [InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦 📰', url='https://t.me/Team_Miss_India'),
-         InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 📞', url='https://t.me/InfoSecInsiders')]
+         [InlineKeyboardButton('UPDATES 📰', url='https://t.me/Team_Miss_India'),
+         InlineKeyboardButton('SUPPORT 📞', url='https://t.me/InfoSecInsiders')]
          )
    else:
       button.append([InlineKeyboardButton('𝗖𝗔𝗡𝗖𝗘𝗟 ✖️', 'terminate_frwd')])
@@ -285,7 +285,7 @@ def TimeFormatter(milliseconds: int) -> str:
     return tmp[:-2]
 
 def retry_btn(id):
-    return InlineKeyboardMarkup([[InlineKeyboardButton('𝗥𝗘𝗧𝗥𝗬 ♻️', f"start_public_{id}")]])
+    return InlineKeyboardMarkup([[InlineKeyboardButton('RETRY ♻️', f"start_public_{id}")]])
 
 
 
