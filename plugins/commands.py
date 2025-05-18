@@ -18,7 +18,7 @@ from pyrogram import Client, filters, enums, __version__ as pyrogram_version
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument
 
 main_buttons = [[
-        InlineKeyboardButton('UPDATES 📰', url='https://t.me/Team_Miss_India'),
+        InlineKeyboardButton('UPDATES 📰', url='https://t.me/Vishnu_vigil'),
         InlineKeyboardButton('SUPPORT 📞', url='https://t.me/InfoSecInsiders')
         ],[
         InlineKeyboardButton('HELP 📮', callback_data='help'),
