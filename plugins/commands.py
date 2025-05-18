@@ -18,13 +18,13 @@ from pyrogram import Client, filters, enums, __version__ as pyrogram_version
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaDocument
 
 main_buttons = [[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-        InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')
+        InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦 📰', url='https://t.me/Team_Miss_India'),
+        InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 📞', url='https://t.me/InfoSecInsiders')
         ],[
-        InlineKeyboardButton('🛠️ Help', callback_data='help'),
-        InlineKeyboardButton('🩷 About', callback_data='about')
+        InlineKeyboardButton('𝗛𝗘𝗟𝗣 📮', callback_data='help'),
+        InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧 🤖', callback_data='about')
         ],[
-        InlineKeyboardButton('🧑‍💻 Developer 🧑‍💻', url='https://t.me/CallAdminRobot')
+        InlineKeyboardButton('𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 🌘', url='https://t.me/Mr_Pbail')
         ]]
 
 
@@ -71,12 +71,12 @@ async def helpcb(bot, query):
         text=Translation.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton('🛠️ How To Use Me 🛠️', callback_data='how_to_use')
+            InlineKeyboardButton('𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘 𝗠𝗘 🪧', callback_data='how_to_use')
             ],[
-            InlineKeyboardButton('⚙️ Settings ⚙️', callback_data='settings#main'),
-            InlineKeyboardButton('📊 Stats 📊', callback_data='status')
+            InlineKeyboardButton('𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 ⚙️', callback_data='settings#main'),
+            InlineKeyboardButton('𝗦𝗧𝗔𝗧𝗦 📊', callback_data='status')
             ],[
-            InlineKeyboardButton('🔙 Back', callback_data='back')
+            InlineKeyboardButton('𝗕𝗔𝗖𝗞 🐫', callback_data='back')
             ]]
         ))
 
@@ -86,7 +86,7 @@ async def helpcb(bot, query):
 async def how_to_use(bot, query):
     await query.message.edit_text(
         text=Translation.HOW_USE_TXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🔙 Back', callback_data='help')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('𝗕𝗔𝗖𝗞 🐫', callback_data='help')]]),
         disable_web_page_preview=True
     )
 
@@ -106,7 +106,7 @@ async def back(bot, query):
 async def about(bot, query):
     await query.message.edit_text(
         text=Translation.ABOUT_TXT.format(bot.me.mention),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🔙 Back', callback_data='back')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('𝗕𝗔𝗖𝗞 🐫', callback_data='back')]]),
         disable_web_page_preview=True,
         parse_mode=enums.ParseMode.HTML,
     )
@@ -119,7 +119,7 @@ async def status(bot, query):
     total_channels = await db.total_channels()
     await query.message.edit_text(
         text=Translation.STATUS_TXT.format(users_count, bots_count, temp.forwardings, total_channels, temp.BANNED_USERS ),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🔙 Back', callback_data='help')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('𝗕𝗔𝗖𝗞 🐫', callback_data='help')]]),
         parse_mode=enums.ParseMode.HTML,
         disable_web_page_preview=True,
     )
