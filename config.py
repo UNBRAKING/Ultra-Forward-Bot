@@ -10,8 +10,8 @@ import os
 
 class Config:
     API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", ")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", ")
+    API_HASH = os.environ.get("API_HASH", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     BOT_SESSION = os.environ.get("BOT_SESSION", "forward-bot")
     # Add error handling for DB_URL
     DB_URL = os.environ.get("DB_URL")
